@@ -20,7 +20,7 @@ User.plugin(mongooseSlugPlugin, { tmpl: '<%=username%>' })
 mongoose.model('Article', Article)
 mongoose.model('User', User)
 
-mongoose.connect('mongodb+srv://stan-stan:VLOqxdbFEVXsCzO5@cluster0.zgrjyar.mongodb.net/?retryWrites=true&w=majority', () => {
+mongoose.connect('URI', () => {
     console.log("Connected to database.")
 });
 
